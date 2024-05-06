@@ -133,7 +133,10 @@ button:hover {
   font-size: 45px;
   border-radius: 25px;
 }
-
+.nav-list li.donate::after {
+  text-decoration: none; /* Remove underline */
+  width: 0%;
+}
 /* Update read-more-btn positioning */
 
 

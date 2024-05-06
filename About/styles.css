@@ -83,7 +83,10 @@ header {
     text-decoration: none; /* Remove underline */
     width: 0%;
 }
-
+.nav-list li.donate::after {
+    text-decoration: none; /* Remove underline */
+    width: 0%;
+}
 
 
 /* Button styles */

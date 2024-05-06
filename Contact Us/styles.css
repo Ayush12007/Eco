@@ -98,7 +98,10 @@ button {
     text-transform: uppercase; /* Uppercase text */
     transition: background-color 0.3s ease; /* Smooth transition */
 }
-
+.nav-list li.donate::after {
+    text-decoration: none; /* Remove underline */
+    width: 0%;
+}
 button:hover {
     background-color: rgb(18, 168, 28); /* Change background color on hover */
     color: #fff; /* Change text color on hover */

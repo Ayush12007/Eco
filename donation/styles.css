@@ -103,7 +103,10 @@ button:hover {
   background-color: rgb(18, 168, 28); /* Change background color on hover */
   color: #fff; /* Change text color on hover */
 }
-
+.nav-list li.donate::after {
+  text-decoration: none; /* Remove underline */
+  width: 0%;
+}
 /* Media Queries for responsiveness */
 @media screen and (max-width: 768px) {
   .nav-list li {
