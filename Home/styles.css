@@ -225,15 +225,16 @@ body {
     padding: 50px 0;
 }
 .vol{
-    color: #000000;
+    color: #ffffff;
 }
 .our-impacts h2 {
+    color: #ffffff;
     margin-bottom: 20px;
 }
 .vol1{
     background: transparent;
     border: 0px;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .vol1:hover{
     color: white;
