@@ -8,26 +8,18 @@
 /* Basic styles for the header */
 header {
   background-color: transparent;
-  padding: 20px;
-  height: 85px;
-  position: absolute; /* Position the header on top of the slideshow */
-  top: 0;
-  left: 0;
-  right: 0;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 100px; /* Increased height to accommodate search bar */
+  position: relative; /* Position the header relative to the document flow */
   z-index: 2; 
 }
 
-/* Logo styles */
 .logo {
   float: left;
-  font-size: 24px;
-  color: #333; /* Change logo color */
-  text-transform: uppercase; /* Uppercase text */
-  letter-spacing: 2px; /* Add letter spacing */
-  margin-right: 20px; /* Add margin to create space between logo and list */
 }
 
-/* Navigation styles */
 .nav-list {
   list-style-type: none;
   float: right;
@@ -35,17 +27,16 @@ header {
 
 .nav-list li {
   display: inline-block;
-  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative; /* Add relative positioning */
 }
 
 .nav-list li a {
-  color: #333; /* Change link color */
-  text-decoration: none; /* Remove underline */
-  font-size: 24px; /* Reduce font size */
-  font-weight: 800;
-  text-transform: uppercase; /* Uppercase text */
-  padding: 10px 15px; /* Add padding */
-  transition: color 0.3s ease; /* Smooth color transition */
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 600;
   position: relative; /* Add relative positioning */
 }
 
@@ -53,12 +44,16 @@ header {
 .nav-list li::after {
   content: ''; /* Add empty content */
   position: absolute;
-  bottom: -5px; /* Position the line below the text */
+  bottom: 1px; /* Position the line below the text */
   left: 0;
-  width: 100%;
-  height: 3px; /* Set the height of the line */
+  width: 100%; /* Make the line span the entire width of the parent */
+  height: 5px; /* Set the height of the line */
   background-color: transparent; /* Set initial background color to transparent */
   transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.nav-list li a:hover {
+  color: rgb(40, 158, 11);
 }
 
 /* Change line color on hover */
@@ -66,66 +61,39 @@ header {
   background-color: rgb(18, 168, 28); /* Change the background color of the line */
 }
 
-.nav-list li a:hover {
-  color: rgb(40, 158, 11); /* Change link color on hover */
+.nav-list li:last-child::after {
+  display: none; /* Hide the line for the last list item (donation button) */
 }
 
-/* Styles for the active link */
-.nav-list li.active a {
-  color: rgb(40, 158, 11); /* Change color of active link */
-}
-
-/* Remove line from specific anchor */
-.nav-list li.donate::after {
-  text-decoration: none; /* Remove underline */
-  width: 0%;
-}
-
-/* Button styles */
 button {
   border-radius: 25px;
   background-color: green;
   color: white;
   font-weight: bold;
-  border: none; /* Remove border */
-  padding: 10px 20px; /* Add padding */
-  font-size: 18px; /* Reduce font size */
-  text-transform: uppercase; /* Uppercase text */
-  transition: background-color 0.3s ease; /* Smooth transition */
+  border-color: green;
+  padding: 5px;
+  font-size: 40px;
+  transition: box-shadow 0.3s ease; /* Add transition effect */
 }
 
 button:hover {
-  background-color: rgb(18, 168, 28); /* Change background color on hover */
-  color: #fff; /* Change text color on hover */
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-/* Media Queries for responsiveness */
-@media screen and (max-width: 768px) {
-  .nav-list li {
-    display: block; /* Change to block layout on smaller screens */
-    margin: 10px 0; /* Adjust margin */
-  }
-
-  .nav-list li a {
-    font-size: 16px; /* Adjust font size for smaller screens */
-    padding: 8px 12px; /* Adjust padding */
-  }
-
-  .logo {
-    float: none; /* Remove float */
-    text-align: center; /* Center logo */
-  }
-}
-
-/* Styles for the search container */
 /* Styles for the search container */
 .search-container {
-  position: relative; /* Change to relative positioning */
-  margin-top: 12px; /* Add margin to create space between header and search container */
-  text-align: center; /* Center the content */
-  margin-bottom: 24px;
+  position: absolute; /* Position the search container relative to the header */
+  top: 120px; /* Adjust the distance from the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  z-index: 3; /* Ensure the search container appears above the navbar */
+  background-color: #f2f2f2;
+  padding: 20px;
 }
-
+span{
+  color: rgb(9, 179, 9);
+}
 #searchInput {
   height: 60px;
   padding: 8px;
@@ -133,16 +101,8 @@ button:hover {
   font-size: 45px;
   border-radius: 25px;
 }
-.nav-list li.donate::after {
-  text-decoration: none; /* Remove underline */
-  width: 0%;
-}
-/* Update read-more-btn positioning */
-
-
 .read-more-btn {
-  position: relative; /* Change to relative positioning */
-  margin-top: 20px;  /* Position the button absolutely */
+  position: absolute; /* Position the button absolutely */
   bottom: 20px; /* Adjust the distance from the bottom */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Center horizontally */
@@ -168,6 +128,11 @@ button:hover {
   background-color: #f2f2f2; /* Change the color code to the desired shade of grey */
   padding-top: 150px;
 }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
 .plants-container {
   display: flex;
@@ -179,9 +144,7 @@ button:hover {
   margin-right: 15px;
   gap: 120px;
 }
-span{
-  color: rgb(0, 128, 0);
-}
+
 .plant {
   text-align: center;
   margin-bottom: 20px;
@@ -198,11 +161,9 @@ span{
 .plant:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Change box shadow on hover */
 }
-
 .highlight {
-  background-color: #ffff99; /* Yellow background */
-}
-
+    background-color: #ffff99; /* Yellow background */
+  }
 .plant img {
   width: 100%;
   height: 280px;
@@ -218,12 +179,11 @@ span{
 
 ul {
   text-align: left;
-  list-style-type: circle;
+  list-style-type:circle;
   padding-left: 10px;
   height: 200px;
 }
-
-li {
+li{
   font-size: 26px;
 }
 
@@ -259,3 +219,4 @@ footer {
   text-decoration: none;
   font-size: 48px;
 }
+
