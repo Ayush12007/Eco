@@ -176,7 +176,9 @@ button:hover {
   margin-right: 15px;
   gap: 120px;
 }
-
+span{
+  color: rgb(0, 128, 0);
+}
 .plant {
   text-align: center;
   margin-bottom: 20px;
