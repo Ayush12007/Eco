@@ -43,7 +43,7 @@ header {
 
 .nav-list li a {
     color: #333; /* Change link color */
-    text-decoration: none;
+    text-decoration: none; /* Remove underline */
     font-size: 24px; /* Reduce font size */
     font-weight: 800;
     text-transform: uppercase; /* Uppercase text */
@@ -69,17 +69,15 @@ header {
     background-color: rgb(18, 168, 28); /* Change the background color of the line */
 }
 
-
 .nav-list li a:hover {
     color: rgb(40, 158, 11); /* Change link color on hover */
 }
-
-
 
 /* Styles for the active link */
 .nav-list li.active a {
     color: rgb(40, 158, 11); /* Change color of active link */
 }
+
 
 /* Button styles */
 button {
