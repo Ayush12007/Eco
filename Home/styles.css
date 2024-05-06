@@ -8,7 +8,7 @@
 /* Basic styles for the header */
 header {
     background-color: transparent;
-    padding: 20px;
+    padding: 10px 20px;
     height: 85px;
     position: absolute; /* Position the header on top of the slideshow */
     top: 0;
@@ -16,9 +16,11 @@ header {
     right: 0;
     z-index: 2; 
 }
-span{
+
+span {
     color: rgb(12, 155, 12);
 }
+
 .logo {
     float: left;
 }
@@ -27,20 +29,22 @@ span{
     list-style-type: none;
     float: right;
 }
-span1{
+
+span1 {
     color: white;
 }
+
 .nav-list li {
     display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     position: relative; /* Add relative positioning */
 }
 
 .nav-list li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 40px;
+    font-size: 20px; /* Adjust font size */
     font-weight: 600;
     position: relative; /* Add relative positioning */
 }
@@ -52,38 +56,44 @@ span1{
     bottom: 1px; /* Position the line below the text */
     left: 0;
     width: 100%; /* Make the line span the entire width of the parent */
-    height: 5px; /* Set the height of the line */
+    height: 3px; /* Set the height of the line */
     background-color: transparent; /* Set initial background color to transparent */
     transition: background-color 0.3s ease; /* Add transition effect */
 }
+
 .nav-list li a:hover {
     color: rgb(40, 158, 11);
 }
+
 /* Change line color on hover */
 .nav-list li:hover::after {
     background-color: rgb(18, 168, 28); /* Change the background color of the line */
 }
+
 .nav-list li:last-child::after {
     display: none; /* Hide the line for the last list item (donation button) */
 }
+
 button {
-    border-radius: 25px;
+    border-radius: 15px; /* Adjust border radius */
     background-color: green;
     color: white;
     font-weight: bold;
     border-color: green;
-    padding: 5px;
-    font-size: 40px;
+    padding: 5px 10px; /* Adjust padding */
+    font-size: 20px; /* Adjust font size */
     transition: box-shadow 0.3s ease; /* Add transition effect */
 }
-button:hover{
+
+button:hover {
     color: black;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
+
 /* Styles for the slideshow */
 .slideshow {
     height: 100vh; /* Cover entire viewport height */
-    width: 100vw; /* Cover entire viewport width */
+    width: 100%; /* Cover entire viewport width */
     overflow: hidden;
     position: relative;
 }
@@ -104,17 +114,18 @@ button:hover{
 
 .text {
     position: absolute;
-    top: 80%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 48px;
+    font-size: 24px; /* Adjust font size */
 }
 
 /* Make text visible */
 .slide .text {
     z-index: 1;
 }
+
 body {
     overflow-x: hidden;
 }
@@ -122,15 +133,17 @@ body {
 /* Styles for impacts section */
 .roles {
     text-align: center;
-    margin: 50px 0;
+    margin: 20px 0; /* Adjust margin */
 }
 
 .roles h2 {
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Adjust margin */
+    font-size: 24px; /* Adjust font size */
 }
 
 .row {
     display: flex;
+    flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
     justify-content: space-around;
     margin-bottom: 20px;
 }
@@ -143,8 +156,8 @@ body {
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
     transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
-    width: 250px; /* Fixed width for each impact div */
-    height: 450px; /* Fixed height for each impact div */
+    width: calc(50% - 20px); /* Adjust width for responsiveness */
+    margin-bottom: 20px; /* Adjust margin */
 }
 
 .role:hover {
@@ -152,9 +165,8 @@ body {
 }
 
 .role img {
-    width: 50%; /* Ensure image fills the div */
-    height: 100%; /* Ensure image fills the div */
-    object-fit: cover; /* Maintain aspect ratio */
+    width: 100%; /* Ensure image fills the div */
+    height: auto; /* Ensure image maintains aspect ratio */
     border-radius: 10px; /* Rounded corners for image */
 }
 
@@ -166,72 +178,34 @@ body {
 
 .title {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 24px; /* Adjust font size */
     margin-bottom: 10px;
 }
 
 p {
-    font-size: 32px;
+    font-size: 16px; /* Adjust font size */
     color: #000000;
 }
 
 /* Styles for volunteer section */
 .volunteer {
-    text-align: right;
-}
-.our-impacts {
-    text-align: right;
-    padding: 50px 0;
-}
-.vol{
-    color: #000000;
-}
-.our-impacts h2 {
-    margin-bottom: 20px;
-}
-.vol1{
-    background: transparent;
-    border: 0px;
-    color: black;
-}
-.vol1:hover{
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-.vol-image{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-}
-.vol-image img{
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.volunteer{
-    /* background-image: url('pexels-photo-9090903.jpeg'); */
-    /* Replace 'your-image-url.jpg' with the path to your image */
     background-color: rgb(7, 54, 9);
     background-size: cover;
     background-position: center;
     font-weight: bold;
     position: relative;
     overflow: hidden;
-    color: white; /* Adjust text color for better readability */
-    padding: 50px; /* Adjust padding as needed */
+    color: white;
+    padding: 50px;
     text-align: center;
-    width: 100vw;
-    height: 450px;
     display: flex;
-    justify-content: row;
-    
-  }
-/* Styles for impacts section */
+    flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
+    justify-content: space-around;
+    align-items: center;
+}
+
 .our-impacts {
+    background-color: rgb(7, 54, 9);
     text-align: center;
     padding: 50px 0;
 }
@@ -242,22 +216,25 @@ p {
 
 .our-impacts .row {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
+    justify-content: space-around;
     margin-bottom: 20px;
 }
 
 .our-impacts .impact {
     position: relative;
-    width: calc(25% - 20px); /* Adjust width to fit 4 impacts in a row */
-    height: 450px;
+    width: calc(50% - 20px); /* Adjust width for responsiveness */
+    height: 300px; /* Adjust height for responsiveness */
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
     transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
+
 .our-impacts .impact:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
 }
+
 .our-impacts .impact img {
     width: 100%;
     height: 100%;
@@ -283,23 +260,22 @@ p {
 
 .our-impacts .impact-info {
     position: absolute;
-    top: 90%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: rgb(247, 246, 246);
+    color: white;
 }
 
 .our-impacts .title {
     font-weight: bold;
-    font-size: 48px;
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
 .our-impacts p {
     font-size: 16px;
 }
-
 
 /* Styles for footer */
 footer {
@@ -311,6 +287,7 @@ footer {
 
 .footer-content {
     display: flex;
+    flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
     justify-content: space-around;
     align-items: center;
 }
@@ -323,11 +300,28 @@ footer {
     display: inline;
     margin-left: 20px;
 }
-.pol{
+
+.pol {
     color: white;
 }
+
 .footer-nav li a {
     color: white;
     text-decoration: none;
-    font-size: 48px;
+    font-size: 20px; /* Adjust font size */
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .nav-list li a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .title {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
 }
