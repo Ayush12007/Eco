@@ -79,8 +79,9 @@ header {
 }
 
 /* Remove line from specific anchor */
-.nav-list li.donate a {
+.nav-list li.donate::after {
     text-decoration: none; /* Remove underline */
+    width: 0%;
 }
 
 
