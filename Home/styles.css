@@ -24,7 +24,6 @@ header {
 .logo {
     float: left;
     font-size: 24px;
-    font-weight: bold;
     color: #333; /* Change logo color */
     text-transform: uppercase; /* Uppercase text */
     letter-spacing: 2px; /* Add letter spacing */
@@ -46,7 +45,7 @@ header {
     color: #333; /* Change link color */
     text-decoration: none;
     font-size: 24px; /* Reduce font size */
-    font-weight: 600;
+    font-weight: 800;
     text-transform: uppercase; /* Uppercase text */
     padding: 10px 15px; /* Add padding */
     transition: color 0.3s ease; /* Smooth color transition */
