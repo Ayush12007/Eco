@@ -292,7 +292,7 @@ body {
     position: relative;
     width: calc(25% - 20px); /* Adjust width to fit 4 impacts in a row */
     height: 450px;
-    margin: 20px;
+    margin: 10px; /* Adjust margin between impacts */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
     transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
