@@ -138,7 +138,8 @@ button:hover {
 
 .read-more-btn {
   position: relative; /* Change to relative positioning */
-  margin-top: 20px;  /* Position the button absolutely */
+  margin-top: 12px;  /* Position the button absolutely */
+  margin-bottom: 25px;
   bottom: 20px; /* Adjust the distance from the bottom */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Center horizontally */
