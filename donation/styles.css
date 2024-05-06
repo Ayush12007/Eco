@@ -291,7 +291,7 @@ main {
 
 .product .product_container .item {
   width: 25%; /* Adjusted width for four containers */
-  background-color: rgba(0, 0, 0);
+  background-color: rgb(255, 254, 255);
   border-radius: 10px;
   box-shadow: 0px 3px 10px rgba(0, 0, 0,0.3);
   transition: box-shadow 0.3s ease;
@@ -322,7 +322,7 @@ main {
 .product .product_container .item .item_content h3 {
   font-size: 36px;
   line-height: 1.5;
-  color: rgb(79, 255, 88);
+  color: rgb(7, 227, 18);
   font-weight: bold;
   margin-top: 10px;
 }
@@ -330,7 +330,7 @@ main {
 .product .product_container .item .item_content p {
   font-size: 30px;
   line-height: 1.5;
-  color: #fff;
+  color: #000000;
   margin-top: 10px;
 }
 
