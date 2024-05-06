@@ -118,14 +118,11 @@ button:hover {
 }
 
 /* Styles for the search container */
+/* Styles for the search container */
 .search-container {
-  position: absolute; /* Position the search container relative to the header */
-  top: 120px; /* Adjust the distance from the top */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center horizontally */
-  z-index: 3; /* Ensure the search container appears above the navbar */
-  background-color: #f2f2f2;
-  padding: 20px;
+  position: relative; /* Change to relative positioning */
+  margin-top: 20px; /* Add margin to create space between header and search container */
+  text-align: center; /* Center the content */
 }
 
 #searchInput {
@@ -136,8 +133,12 @@ button:hover {
   border-radius: 25px;
 }
 
+/* Update read-more-btn positioning */
+
+
 .read-more-btn {
-  position: absolute; /* Position the button absolutely */
+  position: relative; /* Change to relative positioning */
+  margin-top: 20px;  /* Position the button absolutely */
   bottom: 20px; /* Adjust the distance from the bottom */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Center horizontally */
