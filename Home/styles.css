@@ -283,7 +283,8 @@ body {
 
 .our-impacts .row {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Allow impacts to wrap to the next line */
+    justify-content: space-around;
     margin-bottom: 20px;
 }
 
@@ -296,9 +297,29 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
     transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
+
+@media screen and (max-width: 1024px) {
+    .our-impacts .impact {
+        width: calc(33.33% - 20px); /* Adjust width to fit 3 impacts in a row for smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .our-impacts .impact {
+        width: calc(50% - 20px); /* Adjust width to fit 2 impacts in a row for even smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .our-impacts .impact {
+        width: calc(100% - 20px); /* Adjust width to fit 1 impact per row for mobile screens */
+    }
+}
+
 .our-impacts .impact:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
 }
+
 .our-impacts .impact img {
     width: 100%;
     height: 100%;
@@ -340,6 +361,7 @@ body {
 .our-impacts p {
     font-size: 16px;
 }
+
 
 
 /* Styles for footer */
