@@ -121,8 +121,9 @@ button:hover {
 /* Styles for the search container */
 .search-container {
   position: relative; /* Change to relative positioning */
-  margin-top: 20px; /* Add margin to create space between header and search container */
+  margin-top: 12px; /* Add margin to create space between header and search container */
   text-align: center; /* Center the content */
+  margin-bottom: 24px;
 }
 
 #searchInput {
@@ -138,8 +139,7 @@ button:hover {
 
 .read-more-btn {
   position: relative; /* Change to relative positioning */
-  margin-top: 12px;  /* Position the button absolutely */
-  margin-bottom: 25px;
+  margin-top: 20px;  /* Position the button absolutely */
   bottom: 20px; /* Adjust the distance from the bottom */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Center horizontally */
