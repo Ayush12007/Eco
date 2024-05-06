@@ -44,10 +44,10 @@ header {
 .nav-list li::after {
   content: ''; /* Add empty content */
   position: absolute;
-  bottom: 1px; /* Position the line below the text */
+  bottom: -5px; /* Position the line below the text */
   left: 0;
   width: 100%; /* Make the line span the entire width of the parent */
-  height: 5px; /* Set the height of the line */
+  height: 3px; /* Set the height of the line */
   background-color: transparent; /* Set initial background color to transparent */
   transition: background-color 0.3s ease; /* Add transition effect */
 }
@@ -132,7 +132,7 @@ span{
 /* Plant Info Page Styles */
 .main-content {
   background-color: #f2f2f2; /* Change the color code to the desired shade of grey */
-  padding-top: 150px;
+  padding-top: 60px;
 }
 body {
   font-family: Arial, sans-serif;
