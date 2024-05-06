@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Info</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1 style="font-size: 50px;"><span>Eco</span><span1>Harmony</span1></h1>
+            </div>
+            <ul class="nav-list">
+                <li><a href="/Home/index.html">Home</a></li>
+                <li><a href="/About/index.html">About</a></li>
+                <li><a href="/forums/index.html">Forum</a></li>
+                <li><a href="/plant Info/index.html">Plant Info</a></li>
+                <li><a href="/Contact Us/index.html">Contact Us</a></li>
+                <li><a href="http://localhost:3000/" target="_blank">Login</a></li>
+                <li><a href="/donation/index.html"><button>Donate</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <div class="main-content">
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for a plant...">
+        <button onclick="scrollToDiv()()">Search</button>
+    </div>
+    <div class="plant-info" id="plantInfo">
+    <div class="plants-container">
+        <div class="plant" id="plant1">
+            <img src="https://images.pexels.com/photos/539694/pexels-photo-539694.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Plant 1">
+            <h2>Lotus
+            </h2>
+            <ul>
+                <li> Lotus plants are aquatic and thrive in water. </li>
+                <li> They prefer full sun, meaning they need at least 6 to 8 hours of direct sunlight daily.</li>
+                <li>Lotus plants grow best in loamy soil that is rich in organic matter. </li>
+                <li> Lotus plants prefer warm temperatures .</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant2">
+            <img src="https://images.pexels.com/photos/54186/tulips-flowers-tulip-bouquet-violet-54186.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Plant 2">
+            <h2>Tulip</h2>
+            <ul>
+                <li>Tulips generally require regular watering, especially during their active growth phase in spring.</li>
+                <li>They need at least 6 hours of direct sunlight per day to bloom properly.</li>
+                <li>Sandy or loamy soil that is rich in organic matter is ideal for tulips.</li>
+                <li>Tulips like soil that is consistently moist but not waterlogged. </li>
+            </ul>
+        </div>
+        <div class="plant" id="plant3">
+            <img src="https://images.pexels.com/photos/1454288/pexels-photo-1454288.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Plant 3">
+            <h2>Sunflower</h2>
+            <ul>
+                <li>Provide them with about 1 to 1.5 inches of water per week.</li>
+                <li>Plant them in an area that receives at least 6 to 8 hours of direct sunlight per day for optimal growth and flowering.</li>
+                <li>Sunflowers prefer well-draining soil with a pH level between 6.0 and 7.5. </li>
+                <li> They also benefit from soil that is well-drained and not waterlogged.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant4">
+            <img src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Plant 4">
+            <h2>Rose</h2>
+            <ul>
+                <li>Roses generally require about 1 inch of water per week.</li>
+                <li>Roses thrive in full sunlight, meaning they need at least 6 hours of direct sunlight per day.</li>
+                <li>Well-draining soil is crucial for roses. Sandy loam or loamy soil is ideal.</li>
+                <li>Mulching around the base of the plants helps retain moisture and suppress weeds.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant1">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Aloe-Vera-Plant.png.webp" alt="Plant 1">
+            <h2>Aloe Vera
+            </h2>
+            <ul>
+                <li>Allow soil to dry out completely between waterings.</li>
+                <li>Prefers bright, indirect light but can also tolerate partial shade.</li>
+                <li>Well-draining soil mix, such as cactus or succulent potting mix.  </li>
+                <li>Aloe vera prefers low to moderate humidity levels. </li>
+            </ul>
+        </div>
+        <div class="plant" id="plant2">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Amaryllis-Plant.png.webp" alt="Plant 2">
+            <h2>Amaryllis</h2>
+            <ul>
+                <li>Keep soil evenly moist during active gyrowth, but allow it to dry slightly between waterings.</li>
+                <li>Requires bright, indirect sunlight.</li>
+                <li>Well-draining potting mix, such as a blend of potting soil and perlite.</li>
+                <li>Ensure proper drainage to prevent waterlogging, especially during dormancy.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant3">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Cactus-Plant.png.webp" alt="Plant 3">
+            <h2>Cactus</h2>
+            <ul>
+                <li>Water sparingly, allowing the soil to dry out completely between waterings.</li>
+                <li>Requires plenty of direct sunlight, at least 6 hours per day.</li>
+                <li>Well-draining soil mix specifically formulated for cacti and succulents.  </li>
+                <li> Cacti prefer dry conditions and are adapted to arid environments, so avoid excessive moisture in the soil.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant4">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Apple-Plant.png.webp" alt="Plant 4">
+            <h2>Apple Plant</h2>
+            <ul>
+                <li>Regular watering, especially during the growing season.</li>
+                <li>Full sun, requiring at least 6-8 hours of direct sunlight daily for optimal growth and fruit production.</li>
+                <li>Sandy loam or loamy soil rich in organic matter is ideal.</li>
+                <li>Adequate moisture is essential, but avoid waterlogged conditions.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant1">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Azalea-plant.png.webp" alt="Plant 1">
+            <h2>Azalea
+            </h2>
+            <ul>
+                <li> Regular watering, keeping the soil consistently moist but not waterlogged. </li>
+                <li> Partial shade to filtered sunlight, especially during the hottest part of the day.</li>
+                <li>Well-draining, acidic soil with a pH between 4.5 and 6.0. </li>
+                <li>Azaleas prefer moist conditions but should not be waterlogged. </li>
+            </ul>
+        </div>
+        <div class="plant" id="plant2">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Babys-Breath-plant.png.webp" alt="Plant 2">
+            <h2>Baby's Breath</h2>
+            <ul>
+                <li>Infrequent but deep watering once established, allowing the soil to dry slightly between waterings.</li>
+                <li>Full sun to partial shade, especially in hot climates where some afternoon shade may be beneficial.</li>
+                <li>Well-draining soil with a slightly alkaline pH. Sandy soil amended with organic matter is ideal.</li>
+                <li>Prefers slightly dry to moderately moist conditions once established.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant3">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Bamboo-plant.png.webp" alt="Plant 3">
+            <h2>Bamboo</h2>
+            <ul>
+                <li> Regular watering, keeping the soil consistently moist but not waterlogged.</li>
+                <li>Prefers partial shade to full sun, depending on the species. Some varieties can tolerate full sun.</li>
+                <li>Well-draining, fertile soil with good organic content. A slightly acidic to neutral pH is preferred. </li>
+                <li> Requires consistently moist soil, especially during the growing season.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant4">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Begonia-plant.png.webp" alt="Plant 4">
+            <h2>Begonia</h2>
+            <ul>
+                <li>Keep soil evenly moist but not waterlogged. Allow the top inch of soil to dry out between waterings.</li>
+                <li>Prefers bright, indirect light or partial shade. Avoid direct sunlight.</li>
+                <li>Well-draining potting mix with good aeration. </li>
+                <li>Requires moderate to high humidity levels. Use a pebble tray or room humidifier to increase humidity around the plant.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant4">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Black-eyed-Susan-plant.png.webp" alt="Plant 4">
+            <h2>Black-eyed Susan</h2>
+            <ul>
+                <li>Requires moderate watering, allowing the soil to dry slightly between waterings.</li>
+                <li>Requires at least 6 hours of sunlight daily for optimal growth and flowering.
+                </li>
+                <li>Amend heavy clay soil with organic matter to improve drainage.</li>
+                <li>Prefers average moisture levels. Avoid waterlogged soil. </li>
+            </ul>
+        </div>
+        <div class="plant" id="plant4">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Bleeding-Heart-plant.png.webp" alt="Plant 4">
+            <h2>Bleeding Heart</h2>
+            <ul>
+                <li>Keep the soil consistently moist, especially during periods of active growth and flowering.</li>
+                <li>Prefers partial to full shade, especially in hotter climates. </li>
+                <li>Well-draining, humus-rich soil that retains moisture but does not become waterlogged.</li>
+                <li>Mulching can help retain soil moisture and regulate temperature fluctuations.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant4">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Bonsai-Tree-plant.png.webp" alt="Plant 4">
+            <h2>Bonsai Tree</h2>
+            <ul>
+                <li>Water thoroughly when the soil surface starts to dry out, but avoid waterlogging.</li>
+                <li>Most bonsai trees prefer bright, indirect sunlight.</li>
+                <li>Well-draining soil mix specifically formulated for bonsai trees.</li>
+                <li>Maintain moderate humidity levels around the bonsai tree, especially indoors. </li>
+            </ul>
+        </div>
+        <div class="plant" id="plant4">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Buttercup-plant.png.webp" alt="Plant 4">
+            <h2>Buttercup</h2>
+            <ul>
+                <li>Keep the soil consistently moist but not waterlogged.</li>
+                <li>Buttercups prefer full sun to partial shade. Provide at least 6 hours of direct sunlight daily for optimal growth.</li>
+                <li>Well-draining, fertile soil with a slightly acidic to neutral pH.</li>
+                <li>Maintain moderate to high moisture levels in the soil, especially during hot weather.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant4">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Calla-Lily-Plant.png.webp" alt="Plant 4">
+            <h2>Calla Lily</h2>
+            <ul>
+                <li>Keep the soil consistently moist, but not waterlogged.</li>
+                <li>Prefers bright, indirect light. Avoid direct sunlight.</li>
+                <li> Well-draining soil with a mix of peat moss, perlite, and potting soil.</li>
+                <li> Requires consistently moist soil, but avoid waterlogging. </li>
+            </ul>
+        </div>
+        <div class="plant" id="plant4">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Camellia-Plant.png.webp" alt="Plant 4">
+            <h2>Camellia</h2>
+            <ul>
+                <li>Keep the soil consistently moist, especially during the growing season.</li>
+                <li>Prefers partial shade to full shade.</li>
+                <li> Well-draining, slightly acidic soil with good organic content.</li>
+                <li>Requires consistently moist soil, especially during the growing season.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant4">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Canna-Lily.png.webp" alt="Plant 4">
+            <h2>Canna Lily</h2>
+            <ul>
+                <li>Keep the soil consistently moist, especially during the growing season.</li>
+                <li>Requires full sun to thrive.</li>
+                <li>Well-draining, fertile soil with good organic content. A mix of garden soil and compost works well.</li>
+                <li>Requires regular watering to keep the soil consistently moist but not waterlogged. </li>
+            </ul>
+        </div>
+        <div class="plant" id="plant4">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Canterbury-Bells-Plant.png.webp" alt="Plant 4">
+            <h2>Canterbury Bells</h2>
+            <ul>
+                <li>Keep the soil consistently moist.</li>
+                <li>Prefers partial shade to full sun. Provide at least 4-6 hours of sunlight daily.</li>
+                <li>Well-draining soil with good fertility. A loamy soil enriched with organic matter. </li>
+                <li> Requires regular watering to keep the soil consistently moist but not soggy. </li>
+            </ul>
+        </div>
+        <div class="plant" id="plant4">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Carnation-Plant.png.webp" alt="Plant 4">
+            <h2>Carnation</h2>
+            <ul>
+                <li>Keep the soil consistently moist but not waterlogged.</li>
+                <li>Requires full sun to partial shade. Provide at least 4-6 hours of direct sunlight daily.</li>
+                <li>Well-draining soil with good fertility. A slightly alkaline soil pH between 6.0 and 7.5 is ideal.</li>
+                <li>Regular watering is essential, especially during hot and dry periods.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant4">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Celosia-Plant.png.webp" alt="Plant 4">
+            <h2>Celosia</h2>
+            <ul>
+                <li> Keep the soil consistently moist but not waterlogged.</li>
+                <li>Requires full sun to thrive. Provide at least 6-8 hours of direct sunlight daily.</li>
+                <li>Well-draining soil with good fertility is ideal. A loamy soil enriched with organic matter is recommended.</li>
+                <li>Celosia plants prefer moderate moisture levels. Avoid overwatering, as soggy soil can lead to root rot. </li>
+            </ul>
+        </div>
+        <div class="plant" id="plant4">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Chrysanthemum-Plant.png.webp" alt="Plant 4">
+            <h2>Chrysanthemum</h2>
+            <ul>
+                <li>Keep the soil consistently moist but not waterlogged.</li>
+                <li>Requires full sun to partial shade. Provide at least 4-6 hours of direct sunlight daily.</li>
+                <li>Well-draining soil is essential. A loamy soil enriched with organic matter is preferred.</li>
+                <li>Maintain moderate moisture levels. Avoid overwatering, as it can cause root rot.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant4">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Coneflower-Plant.png.webp" alt="Plant 4">
+            <h2>Coneflower</h2>
+            <ul>
+                <li>Prefers well-drained soil and is drought-tolerant once established.</li>
+                <li>Requires full sun to thrive, at least 6-8 hours of direct sunlight per day.</li>
+                <li> Thrives in average to poor soil conditions, as long as it's well-draining.</li>
+                <li>Avoid overwatering, as it can lead to root rot. Once established, coneflowers are fairly low-maintenance.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant1">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Cosmos-Plant.png.webp" alt="Plant 1">
+            <h2>Cosmos
+            </h2>
+            <ul>
+                <li> Requires moderate watering, keeping the soil consistently moist but not waterlogged.  </li>
+                <li> Thrives in full sun, requiring at least 6-8 hours of direct sunlight per day.</li>
+                <li>Prefers well-drained, moderately fertile soil with a pH around 6.0 to 7.0.  </li>
+                <li>Avoid overwatering, as it can cause root rot. Once established, cosmos are somewhat drought-tolerant</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant2">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Crocus-Plant.png.webp" alt="Plant 2">
+            <h2>Crocus</h2>
+            <ul>
+                <li> Requires moderate watering during the growing season.</li>
+                <li>Prefers full sun to partial shade. Requires at least 6 hours of direct sunlight per day for optimal growth and flowering.</li>
+                <li> Thrives in well-drained, sandy or loamy soil with good organic content. </li>
+                <li>Avoid overwatering, especially during dormancy, as it can cause the bulbs to rot. </li>
+            </ul>
+        </div>
+        <div class="plant" id="plant3">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Cyclamen-Plant.png.webp" alt="Plant 3">
+            <h2>Cyclamen</h2>
+            <ul>
+                <li>  Requires moderate watering, keeping the soil evenly moist but not waterlogged.</li>
+                <li> Prefers bright, indirect light. Avoid exposing it to direct sunlight.</li>
+                <li> Needs well-draining soil rich in organic matter. A slightly acidic to neutral pH (around 6.0 to 7.0) is ideal. </li>
+                <li>Keep humidity levels high around the plant. </li>
+            </ul>
+        </div>
+        <div class="plant" id="plant4">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Daffodil.png.webp" alt="Plant 4">
+            <h2>Daffodil</h2>
+            <ul>
+                <li>Daffodils prefer regular watering, especially during their active growth period in spring.</li>
+                <li>Thrives in full sun to partial shade. Ideally, they should receive at least 6 hours of sunlight per day.</li>
+                <li>Requires well-draining soil with good organic content.</li>
+                <li> Avoid waterlogged conditions, as excessive moisture can lead to bulb rot.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant1">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Grapes-Plant.png.webp" alt="Plant 1">
+            <h2>Grapes Plant
+            </h2>
+            <ul>
+                <li>Grapes require regular watering, especially during dry periods, to keep the soil consistently moist but not waterlogged.</li>
+                <li>Thrives in full sun, requiring at least 6 to 8 hours of direct sunlight daily for optimal growth .</li>
+                <li>Requires well-draining soil with good fertility and a pH level between 5.5 and 7.0. </li>
+                <li>While they need consistent moisture, avoid overwatering, as it can lead to root rot.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant2">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Seaside-Daisy.png.webp" alt="Plant 2">
+            <h2>Daisy</h2>
+            <ul>
+                <li>Daisies prefer evenly moist soil. Water them regularly, allowing the soil to dry slightly between waterings to prevent root rot.</li>
+                <li>hrive in full sun to partial shade, requiring at least 6 hours of sunlight daily for optimal flowering.</li>
+                <li>They prefer well-draining soil with moderate fertility.</li>
+                <li>Maintain consistent moisture levels, but avoid waterlogging the soil.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant3">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Dandelion.png.webp" alt="Plant 3">
+            <h2>Dandelion</h2>
+            <ul>
+                <li>Dandelions are drought-tolerant and don't require much watering. </li>
+                <li>They thrive in full sun to partial shade, requiring at least 6 hours of sunlight daily.</li>
+                <li>Dandelions are adaptable to various soil types but prefer well-draining soil. </li>
+                <li> These plants prefer slightly moist soil but can tolerate dry conditions. </li>
+            </ul>
+        </div>
+        <div class="plant" id="plant4">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Dogwood-Plant.png.webp" alt="Plant 4">
+            <h2>Dogwood</h2>
+            <ul>
+                <li>Dogwoods prefer moist, well-drained soil. Keep the soil consistently moist.</li>
+                <li>They thrive in partial shade to full sun, although they prefer some protection.</li>
+                <li>Dogwoods prefer acidic, organic-rich soil. Amending the soil with compost before planting can improve soil structure and fertility.</li>
+                <li>Dogwoods prefer moderate moisture levels.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant1">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Delphinium-Plant.png.webp" alt="Plant 1">
+            <h2>Delphinium
+            </h2>
+            <ul>
+                <li>Keep the soil consistently moist but not waterlogged. Delphiniums prefer well-drained soil, so avoid waterlogging to prevent root rot.</li>
+                <li> They thrive in full sun to partial shade.</li>
+                <li> Delphiniums prefer fertile, well-drained soil with a slightly acidic to neutral pH. </li>
+                <li>Maintain moderate moisture levels in the soil. Apply mulch around the base of the plant. </li>
+            </ul>
+        </div>
+        <div class="plant" id="plant2">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Olive-plant.png.webp" alt="Plant 2">
+            <h2>Olive</h2>
+            <ul>
+                <li>Infrequent but deep watering once established, allowing the soil to dry slightly between waterings.</li>
+                <li>Full sun to partial shade, especially in hot climates where some afternoon shade may be beneficial.</li>
+                <li>Well-draining soil with a slightly alkaline pH. Sandy soil amended with organic matter is ideal.</li>
+                <li>Prefers slightly dry to moderately moist conditions once established.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant2">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Oak-plant.png.webp" alt="Plant 2">
+            <h2>Oak</h2>
+            <ul>
+                <li>Infrequent but deep watering once established, allowing the soil to dry slightly between waterings.</li>
+                <li>Full sun to partial shade, especially in hot climates where some afternoon shade may be beneficial.</li>
+                <li>Well-draining soil with a slightly alkaline pH. Sandy soil amended with organic matter is ideal.</li>
+                <li>Prefers slightly dry to moderately moist conditions once established.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant2">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Money-Plant-Jade-Plant.png.webp" alt="Plant 2">
+            <h2>Money Plant</h2>
+            <ul>
+                <li>Infrequent but deep watering once established, allowing the soil to dry slightly between waterings.</li>
+                <li>Full sun to partial shade, especially in hot climates where some afternoon shade may be beneficial.</li>
+                <li>Well-draining soil with a slightly alkaline pH. Sandy soil amended with organic matter is ideal.</li>
+                <li>Prefers slightly dry to moderately moist conditions once established.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant2">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Marigold-Plant.png.webp" alt="Plant 2">
+            <h2>Marigold</h2>
+            <ul>
+                <li>Infrequent but deep watering once established, allowing the soil to dry slightly between waterings.</li>
+                <li>Full sun to partial shade, especially in hot climates where some afternoon shade may be beneficial.</li>
+                <li>Well-draining soil with a slightly alkaline pH. Sandy soil amended with organic matter is ideal.</li>
+                <li>Prefers slightly dry to moderately moist conditions once established.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant2">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Maple-Plant.png.webp" alt="Plant 2">
+            <h2>Maple</h2>
+            <ul>
+                <li>Infrequent but deep watering once established, allowing the soil to dry slightly between waterings.</li>
+                <li>Full sun to partial shade, especially in hot climates where some afternoon shade may be beneficial.</li>
+                <li>Well-draining soil with a slightly alkaline pH. Sandy soil amended with organic matter is ideal.</li>
+                <li>Prefers slightly dry to moderately moist conditions once established.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant2">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Lily.png.webp" alt="Plant 2">
+            <h2>Lily</h2>
+            <ul>
+                <li>Infrequent but deep watering once established, allowing the soil to dry slightly between waterings.</li>
+                <li>Full sun to partial shade, especially in hot climates where some afternoon shade may be beneficial.</li>
+                <li>Well-draining soil with a slightly alkaline pH. Sandy soil amended with organic matter is ideal.</li>
+                <li>Prefers slightly dry to moderately moist conditions once established.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant2">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Lavender.png.webp" alt="Plant 2">
+            <h2>Lavender</h2>
+            <ul>
+                <li>Infrequent but deep watering once established, allowing the soil to dry slightly between waterings.</li>
+                <li>Full sun to partial shade, especially in hot climates where some afternoon shade may be beneficial.</li>
+                <li>Well-draining soil with a slightly alkaline pH. Sandy soil amended with organic matter is ideal.</li>
+                <li>Prefers slightly dry to moderately moist conditions once established.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant2">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Jasmine.png.webp" alt="Plant 2">
+            <h2>Jasmine</h2>
+            <ul>
+                <li>Infrequent but deep watering once established, allowing the soil to dry slightly between waterings.</li>
+                <li>Full sun to partial shade, especially in hot climates where some afternoon shade may be beneficial.</li>
+                <li>Well-draining soil with a slightly alkaline pH. Sandy soil amended with organic matter is ideal.</li>
+                <li>Prefers slightly dry to moderately moist conditions once established.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant2">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Hibiscus-Plant-1.png.webp" alt="Plant 2">
+            <h2>Hibiscus</h2>
+            <ul>
+                <li>Infrequent but deep watering once established, allowing the soil to dry slightly between waterings.</li>
+                <li>Full sun to partial shade, especially in hot climates where some afternoon shade may be beneficial.</li>
+                <li>Well-draining soil with a slightly alkaline pH. Sandy soil amended with organic matter is ideal.</li>
+                <li>Prefers slightly dry to moderately moist conditions once established.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant2">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Guava-Plant.png.webp" alt="Plant 2">
+            <h2>Guava Plant</h2>
+            <ul>
+                <li>Infrequent but deep watering once established, allowing the soil to dry slightly between waterings.</li>
+                <li>Full sun to partial shade, especially in hot climates where some afternoon shade may be beneficial.</li>
+                <li>Well-draining soil with a slightly alkaline pH. Sandy soil amended with organic matter is ideal.</li>
+                <li>Prefers slightly dry to moderately moist conditions once established.</li>
+            </ul>
+        </div>
+        <div class="plant" id="plant2">
+            <img src="https://engdic.org/wp-content/uploads/2023/07/Violet.png.webp" alt="Plant 2">
+            <h2>Violet</h2>
+            <ul>
+                <li>Infrequent but deep watering once established, allowing the soil to dry slightly between waterings.</li>
+                <li>Full sun to partial shade, especially in hot climates where some afternoon shade may be beneficial.</li>
+                <li>Well-draining soil with a slightly alkaline pH. Sandy soil amended with organic matter is ideal.</li>
+                <li>Prefers slightly dry to moderately moist conditions once established.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <h1 style="font-size: 48px;color: white;"><span>Eco</span>Harmony</h1>
+                <p class="pol" style="font-size: 24px;">Creating a greener world together</p>
+            </div>
+            <div class="footer-right">
+                <ul class="footer-nav">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
