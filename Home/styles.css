@@ -28,6 +28,7 @@ header {
     color: #333; /* Change logo color */
     text-transform: uppercase; /* Uppercase text */
     letter-spacing: 2px; /* Add letter spacing */
+    margin-right: 20px; /* Add margin to create space between logo and list */
 }
 
 /* Navigation styles */
@@ -38,7 +39,6 @@ header {
 
 .nav-list li {
     display: inline-block;
-    margin-left: 20px;
     position: relative;
 }
 
@@ -51,10 +51,6 @@ header {
     padding: 10px 15px; /* Add padding */
     transition: color 0.3s ease; /* Smooth color transition */
     position: relative; /* Add relative positioning */
-}
-
-.nav-list li a:hover {
-    color: rgb(40, 158, 11); /* Change link color on hover */
 }
 
 /* Add line styles */
@@ -73,6 +69,13 @@ header {
 .nav-list li:hover::after {
     background-color: rgb(18, 168, 28); /* Change the background color of the line */
 }
+
+
+.nav-list li a:hover {
+    color: rgb(40, 158, 11); /* Change link color on hover */
+}
+
+
 
 /* Styles for the active link */
 .nav-list li.active a {
@@ -143,7 +146,7 @@ button:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 48px;
+    font-size: 40px;
 }
 
 /* Make text visible */
