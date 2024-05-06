@@ -83,12 +83,11 @@ button:hover {
 
 /* Styles for the search container */
 .search-container {
-  position: absolute; /* Position the search container relative to the header */
-  top: 120px; /* Adjust the distance from the top */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center horizontally */
-  z-index: 3; /* Ensure the search container appears above the navbar */
+  position: relative; 
+  margin-top: 20px;
+  width: 100%; /* Ensure the search container appears above the navbar */
   background-color: #f2f2f2;
+  box-sizing: border-box;
   padding: 20px;
 }
 span{
@@ -100,6 +99,7 @@ span{
   width: 600px;
   font-size: 45px;
   border-radius: 25px;
+  box-sizing: border-box;
 }
 .read-more-btn {
   position: absolute; /* Position the button absolutely */
