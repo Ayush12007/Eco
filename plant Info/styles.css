@@ -33,10 +33,10 @@ header {
 }
 
 .nav-list li a {
-  color: rgb(0, 0, 0);
+  color: #333;
   text-decoration: none;
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 24px; /* Reduce font size */
+    font-weight: 800;
   position: relative; /* Add relative positioning */
 }
 
