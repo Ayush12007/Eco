@@ -78,6 +78,12 @@ header {
     color: rgb(40, 158, 11); /* Change color of active link */
 }
 
+/* Remove line from specific anchor */
+.nav-list li.donate a {
+    text-decoration: none; /* Remove underline */
+}
+
+
 
 /* Button styles */
 button {
